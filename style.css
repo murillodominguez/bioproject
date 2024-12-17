@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(154, 216, 245);
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-inline: 30px;
+  background-color: rgba(223, 239, 255, 0.6);
+  height: 100px;
+}
+
+header h1{
+  font-family: "Montserrat", serif;
+}
+
+header h1::after{
+  content: "powered by BioMuseum";
+  color: rgb(51, 39, 39);
+  font-size: 0.8rem;
+  position: absolute;
+  top: 80px;
+  left: 220px;
+}
+
+.dark-theme-toggle{
+  width: 40px;
+  height: 40px;
+  margin-right: 30px;
+  border-radius: 100%;
+  background-color: white;
+  z-index: 0;
+}
+
+.dark-theme-toggle::after{
+  content: "";
+  display: block;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgba(223, 239, 255, 0.6);;
+  z-index: 1;
+}
+
+.dark-theme-toggle:hover{
+  cursor: pointer;
+}
+
+.water .waves div {
+  background-repeat: repeat-x;
+}
+
+.wave-one {
+  background-image: url(/public/img/wave1.png);
+}
+
+.wave-two {
+  background-image: url(/public/img/wave2.png);
+}
+
+.water div.waves div.wave-one {
+  animation: wave 8.7s linear infinite;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  bottom: 0px;
+  height: 450px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+
+.water div.waves div.wave-two {
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation: wave 10s linear infinite;
+  bottom: 0px;
+  height: 530px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 9;
+}
+
+main ul{
+  color: white;
+  font-size: 3rem;
+  font-family: "Josefin Sans", serif;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 230px;
+  z-index: 11;
+  
+}
+
+main ul li{
+  transition: all ease-out 300ms;
+}
+
+main ul li:hover{
+  cursor: pointer;
+  scale: 110%;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 1920px 0;
+  }
+}
