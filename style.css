@@ -8,6 +8,7 @@
 
 body{
   background-color: rgb(154, 216, 245);
+  transition: all ease-in 400ms;
 }
 
 header{
@@ -18,6 +19,7 @@ header{
   padding-inline: 30px;
   background-color: rgba(223, 239, 255, 0.6);
   height: 100px;
+  transition: all ease-in 400ms;
 }
 
 header h1{
@@ -75,7 +77,7 @@ header h1::after{
   -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   bottom: 0px;
-  height: 450px;
+  height: 50vh;
   left: 0;
   position: absolute;
   right: 0;
@@ -88,14 +90,14 @@ header h1::after{
   animation-fill-mode: forwards;
   animation: wave 10s linear infinite;
   bottom: 0px;
-  height: 530px;
+  height: 60vh;
   left: 0;
   position: absolute;
   right: 0;
   z-index: 9;
 }
 
-main ul{
+.group-list{
   color: white;
   font-size: 3rem;
   font-family: "Josefin Sans", serif;
@@ -106,18 +108,92 @@ main ul{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 230px;
+  bottom: 20vh;
   z-index: 11;
-  
 }
 
-main ul li{
+.species-list {
+  list-style: none;
+  color:white;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.group-list li, .species-list li{
   transition: all ease-out 300ms;
 }
 
 main ul li:hover{
   cursor: pointer;
   scale: 110%;
+}
+
+.group-info, .species-info{
+  background-color: rgb(14, 46, 87);
+  border-radius: 5px;
+  animation: appear 600ms 100ms forwards;
+  scale: 0;
+  padding: 20px;
+  overflow: hidden;
+  font-family: "Josefin Sans", serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+}
+
+.species-info{
+  padding: 30px;
+}
+
+.group-info h1{
+  font-family: "Montserrat", serif;
+}
+
+.close-button, .close-button-species{
+  background-color: transparent;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.close-button:hover, .close-button-species:hover{
+  cursor: pointer;
+}
+
+.rotulo {
+  display: flex;
+}
+
+.species-title{
+  color: white;
+  margin-bottom: 5px;
+}
+
+.cient-name {
+  color: rgb(26, 172, 160);
+  margin-bottom: 10px;
+}
+
+.species-desc{
+  color: white;
+  text-align: justify;
+  line-height: 1.5rem;
+  width: 250px;
+}
+
+.species-image{
+  margin-left: 10px;
+}
+
+@keyframes appear {
+  0%{
+    scale: 0;
+  }
+  100%{
+    scale: 100%;
+  }
 }
 
 @keyframes wave {
