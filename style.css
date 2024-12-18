@@ -64,11 +64,11 @@ header h1::after{
 }
 
 .wave-one {
-  background-image: url(/public/img/wave1.png);
+  background-image: url("public/img/wave1.png");
 }
 
 .wave-two {
-  background-image: url(/public/img/wave2.png);
+  background-image: url("public/img/wave2.png");
 }
 
 .water div.waves div.wave-one {
