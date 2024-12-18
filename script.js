@@ -21,7 +21,7 @@ function toggleDarkMode() {
 const grupos = [
   {'nome': 'Répteis', 'desc': 'Os répteis encontrados no museu próprios da região riograndina.', 'especies': [{'nomecient': 'Caretta caretta', 'nome': 'Tartaruga-marinha', 'desc': 'Tartaruga marinha comum na região do litoral sul, mais conhecida por suas aparições na praia do Cassino.', 'image': 'https://lh3.googleusercontent.com/p/AF1QipNiBfOrhBwprTNUPQYqtBs8z3ObpqQWsYbZRTz3=s680-w680-h510', 'width': 300, 'height': 300}]},
   {'nome': 'Mamíferos', 'desc': 'Os mamíferos encontrados no museu próprios da região riograndina.', 'especies': [{'nomecient': 'Otaria flavescens', 'nome': 'Leão-marinho-do-sul', 'desc': 'Esqueleto do Ipirelo, leão marinho figura icônica da cidade do Rio Grande vira exposição como forma de manter viva a sua memória.', 'image': 'https://www.furg.br/arquivos/Noticias/2022/Institucional/26-09-2022-ipirelo1-furg.jpg', 'width': 600, 'height': 300}]},
-  {'nome': 'Peixes', 'desc': 'Os peixes encontrados no museu próprios da região riograndina.', 'especies': [{'nomecient': '', 'nome': 'Peixe-espada', 'width': 600, 'height': 300}]}
+  {'nome': 'Peixes', 'desc': 'Os peixes encontrados no museu próprios da região riograndina.', 'especies': [{'nomecient': 'Pogonias courbina', 'nome': 'Miragaia', 'desc': 'Peixe de óculos, muito engraçado.', 'image': 'https://media-cdn.tripadvisor.com/media/photo-s/0d/ed/46/ef/cabeca-de-peixe-miraguaia.jpg', 'width': 600, 'height': 300}]}
 ]
 const groupList = document.querySelector('.group-list');
 grupos.map(e => {
